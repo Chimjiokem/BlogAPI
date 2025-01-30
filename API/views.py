@@ -7,4 +7,5 @@ from .models import Post
 class PostView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+    lookup_field = 'pk'
     
