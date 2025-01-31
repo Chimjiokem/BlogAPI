@@ -12,4 +12,3 @@ class UpdateDeleteRetrieve(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     lookup_field = 'pk'
-    
